@@ -16,5 +16,9 @@
   "husky": {
     "pre-commit": "echo commiting"
   },
-  "scripts": {}
+  "scripts": {
+    "dev": "yarn workspace example dev",
+    "build": "yarn workspace react-hook build",
+    "publish": "yarn workspace react-hook npm publish"
+  }
 }
