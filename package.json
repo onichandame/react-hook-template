@@ -16,7 +16,9 @@
     "trailingComma": "es5"
   },
   "husky": {
-    "pre-commit": "format"
+    "hooks": {
+      "pre-commit": "yarn format"
+    }
   },
   "scripts": {
     "dev": "yarn build:hook && nodemon",
