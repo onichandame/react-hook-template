@@ -15,11 +15,13 @@
     "trailingComma": "es5"
   },
   "husky": {
-    "pre-commit": "echo commiting"
+    "pre-commit": "format"
   },
   "scripts": {
-    "dev": "yarn build:example && nodemon",
+    "dev": "yarn build:hook && nodemon",
+    "format": "prettier -c .",
     "build": "yarn workspace react-hook build && yarn build:example",
+    "build:hook": "yarn workspace react-hook build",
     "build:example": "yarn workspace example build",
     "publish": "yarn workspace react-hook npm publish"
   }
