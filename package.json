@@ -5,6 +5,7 @@
     "packages/*"
   ],
   "devDependencies": {
+    "nodemon": "^2.0.4",
     "prettier": "^2.0.5"
   },
   "prettier": {
@@ -17,7 +18,7 @@
     "pre-commit": "echo commiting"
   },
   "scripts": {
-    "dev": "yarn workspace example dev",
+    "dev": "yarn build:example && nodemon",
     "build": "yarn workspace react-hook build && yarn build:example",
     "build:example": "yarn workspace example build",
     "publish": "yarn workspace react-hook npm publish"

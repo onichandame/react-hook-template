@@ -1,0 +1,6 @@
+{
+  "watch": ["packages"],
+  "ignore": ["node_modules", "*.test.ts", "packages/example"],
+  "ext": "ts tsx",
+  "exec": "yarn workspace example dev"
+}
