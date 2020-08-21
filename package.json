@@ -7,7 +7,8 @@
   "devDependencies": {
     "husky": "^4.2.5",
     "nodemon": "^2.0.4",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "pretty-quick": "^3.0.0"
   },
   "prettier": {
     "printWidth": 80,
@@ -17,12 +18,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn format"
+      "pre-commit": "yarn format --staging"
     }
   },
   "scripts": {
     "dev": "nodemon",
-    "format": "prettier -c .",
+    "format": "pretty-quick",
     "build": "yarn build:hook && yarn build:example",
     "build:hook": "yarn workspace react-hook build",
     "build:example": "yarn workspace example build",
