@@ -5,6 +5,7 @@
     "packages/*"
   ],
   "devDependencies": {
+    "husky": "^4.2.5",
     "nodemon": "^2.0.4",
     "prettier": "^2.0.5"
   },
