@@ -1,5 +1,5 @@
 import React from 'react'
-import { useCount } from 'react-hook/src'
+import { useCount } from 'react-hook'
 
 import logo from './logo.svg'
 import './App.css'
