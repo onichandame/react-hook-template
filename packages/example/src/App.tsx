@@ -1,7 +1,8 @@
 import React from 'react'
+import { useCount } from 'react-hook/src'
+
 import logo from './logo.svg'
 import './App.css'
-import { useCount } from 'react-hook'
 
 function App() {
   const { val } = useCount()
