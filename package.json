@@ -24,9 +24,11 @@
   "scripts": {
     "dev": "nodemon",
     "format": "pretty-quick",
+    "example": "yarn workspace example",
+    "hook": "yarn workspace react-hook",
     "build": "yarn build:hook && yarn build:example",
-    "build:hook": "yarn workspace react-hook build",
-    "build:example": "yarn workspace example build",
-    "publish": "yarn workspace react-hook npm publish"
+    "build:hook": "yarn hook build",
+    "build:example": "yarn example run build",
+    "publish": "yarn hook publish"
   }
 }
