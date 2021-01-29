@@ -32,8 +32,8 @@ const Root: FC = () => {
   return (
     <div className={styles.root}>
       <NavBar />
-      <Grid container direction="row">
-        <Grid item justify="space-around">
+      <Grid container justify="space-around" direction="row">
+        <Grid item>
           <Typography variant="h3">{val}</Typography>
         </Grid>
       </Grid>
